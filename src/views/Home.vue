@@ -2,9 +2,7 @@
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
-        <div :style="{ backgroundImage: `url('football_pitch_background_2.jpg')` }">
         <img src="@/assets/nysl_logo.png" alt="nysl logo" class="mb-5 logo">
-        </div>
         <blockquote>
           &#8220;Football is a game of mistakes. Whoever makes the fewest mistakes wins.&#8221;
           <footer>
@@ -24,7 +22,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
@@ -40,16 +39,21 @@ a {
   color: #42b983;
   text-decoration: none;
 }
-.logo
-{
+@media only screen and (min-width: 668px) {
+  .logo {
+    height: 40%;
+    width: 0%;
+    margin: 20px;
+  }
+}
+
+.logo {
   height: 60%;
   width: 60%;
   margin: 20px;
 }
 a .li a {
-    text-decoration: none;
-    }
-
-
+  text-decoration: none;
+}
 
 </style>

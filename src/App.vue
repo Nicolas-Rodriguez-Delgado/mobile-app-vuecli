@@ -20,47 +20,98 @@
       <router-view/>
     </v-content>
     <v-navigation-drawer
-      temporary
-      :right="right"
       v-model="sideNav"
+      :right="right"
+      width="250"
+      clipped
+      fixed
       app
     >
       <v-list>
-
-          <v-list-tile-title><v-icon>home</v-icon><router-link to= "/">  Home</router-link></v-list-tile-title><v-divider></v-divider>
-    
-          <v-list-tile-title><v-icon>schedule</v-icon><router-link to= "/schedule">  Schedule</router-link></v-list-tile-title><v-divider></v-divider>
-          <v-list-tile-title><v-icon>location_on</v-icon><router-link to= "/locations">  Location</router-link></v-list-tile-title><v-divider></v-divider>
-          <v-list-tile-title><v-icon>group</v-icon><router-link to= "/teams">    Teams</router-link></v-list-tile-title><v-divider></v-divider>
-          <v-list-tile-title><v-icon>chat_bubble</v-icon><router-link to= "/chat">    Chat</router-link></v-list-tile-title><v-divider></v-divider>
-
+        <v-list-tile @click="">
+          <v-list-tile-action>
+            <v-icon>home</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>HOME</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile @click="">
+          <v-list-tile-action>
+            <v-icon>schedule</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>SCHEDULE</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile @click="">
+          <v-list-tile-action>
+            <v-icon>location_on</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>LOCATIONS</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile @click="">
+          <v-list-tile-action>
+            <v-icon>group</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>TEAMS</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
+        <v-list-tile @click="">
+          <v-list-tile-action>
+            <v-icon>chat_bubble</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>CHAT</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>
+      <span>&copy;  2018</span>
     </v-footer>
   </v-app>
 </template>
+<style>
+
+a {
+  text-decoration: none;
+}
+</style>
+
 
 <script>
-
 export default {
-  name: 'App',
-  data () {
+  name: "App",
+  data() {
     return {
       clipped: false,
       drawer: true,
       fixed: false,
       App: false,
-      items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
+      info: [],
       miniVariant: false,
       right: true,
       sideNav: false,
-      title: 'NYSL Soccer League'
+      title: "NYSL Soccer League"
+    };
+  },
+  created(){
+    this.getData();
+  },
+  methods: {
+    getData(){
+      fetch("https://api.myjson.com/bins/1eyfrg")
+    .then(resp => 
+      resp.json())
+    .then((data) => {
+    this.info = data.Matches;
+    console.log(this.info);
+    })
     }
   }
-}
+};
 </script>

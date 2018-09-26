@@ -1,0 +1,303 @@
+{
+    "Matches": [
+        {
+            "teams": {
+                "name": "Team 1 vs Team 2",
+                "t1name": "Inter",
+                "t1logo": "https://i.imgur.com/MMleyZI.png",
+                "t2name": "Fiorentina",
+                "t2logo": "https://i.imgur.com/RwMxURO.png",
+                "field": "San Ciro",
+                "fieldImage": "media/estadio/estadio1.jpg",
+                "fieldDirecction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy.",
+                "matchId": "0",
+                "date": "9/10",
+                "time": "9:45am",
+                "fieldMapUrl": "maps.google.es"
+            }
+        },
+        {
+            "teams": {
+                "name": "Team 3 vs Team 4",
+                "t1name": "Juventus",
+                "t1logo": "https://i.imgur.com/XztrtGZ.png",
+                "t2name": "Napoli",
+                "t2logo": "https://i.imgur.com/uifB36K.png",
+                "field": "Allianz",
+                "fieldImage": "media/estadio/estadio2.jpg",
+                "fieldDirecction": "Corso Gaetano Scirea, 50, 10151 Torino TO, Italy",
+                "matchId": "1",
+                "date": "9/17",
+                "time": "9:50",
+                "fieldMapUrl": "maps.google.es"
+            }
+        },
+        {
+            "teams": {
+                "name": "Team 5 vs Team 6",
+                "t1name": "Bologna",
+                "t1logo": "https://i.imgur.com/tf2GOGZ.png",
+                "t2name": "Chievo",
+                "t2logo": "https://i.imgur.com/4sKW7VO.png",
+                "field": "Azurri",
+                "fieldImage": "media/estadio/estadio3.jpg",
+                "fieldDirecction": "Viale Giulio Cesare, 18, 24124 Bergamo BG, Italy",
+                "matchId": "2",
+                "date": "9/21",
+                "time": "10:45am",
+                "fieldMapUrl": "maps.google.es"
+            }
+        },
+        {
+            "teams": {
+                "name": "Team 7 vs Team 8",
+                "t1name": "Parma.",
+                "t1logo": "https://i.imgur.com/GVFon2R.png",
+                "t2name": "Lazio",
+                "t2logo": "https://i.imgur.com/MU8RAdo.png",
+                "field": "Stadio la Vecchia Donna",
+                "fieldImage": "media/estadio/estadio4.jpg",
+                "fieldDirecction": " Piazzale Vincenzo Tecchio, 80125 Napoli NA, Italy",
+                "matchId": "3",
+                "date": "9/28",
+                "time": "11:45am",
+                "fieldMapUrl": "maps.google.es"
+            }
+        },
+        {
+            "teams": {
+                "name": "Team 9 vs Team 10",
+                "t1name": "Sassuolo",
+                "t1logo": "https://i.imgur.com/FzYuvFj.png",
+                "t2name": "Brescia",
+                "t2logo": "https://i.imgur.com/Os2ITfp.png",
+                "field": "Olimpico",
+                "fieldImage": "media/estadio/estadio5.jpg",
+                "fieldDirecction": "Viale dei Gladiatori, 00135 Roma RM, Italy",
+                "matchId": "4",
+                "date": "9/31",
+                "time": "7:45am",
+                "fieldMapUrl": "maps.google.es"
+            }
+        }
+    ],
+    "Teams": [
+        {
+            "name": "Inter",
+            "logo": "media/escudos/escudo1.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Fiorentina",
+            "logo": "media/escudos/escudo2.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Juventus",
+            "logo": "media/escudos/escudo3.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Napoli",
+            "logo": "media/escudos/escudo4.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Atalanta",
+            "logo": "media/escudos/escudo5.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Chievo",
+            "logo": "media/escudos/escudo6.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Parma.",
+            "logo": "media/escudos/escudo7.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Lazio",
+            "logo": "media/escudos/escudo8.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Brescia",
+            "logo": "media/escudos/escudo9.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        },
+        {
+            "name": "Sassuolo",
+            "logo": "media/escudos/escudo10.png",
+            "field": {
+                "image": "img-url",
+                "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
+                "name": "San Ciro"
+            },
+            "lastgames": {
+                "g1": "L",
+                "g2": "L",
+                "g3": "W",
+                "g4": "D",
+                "g5": "W"
+            }
+        }
+    ],
+    "Fields": [
+        {
+            "name": "San Ciro",
+            "position": "http://maps.apple.com/?q=51.507269,-0.127695",
+            "image": "media/estadio/estadio1.jpg",
+            "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy.",
+            "googleUrl": "www.google.com/maps/embed/v1/place?q=Piazzale Angelo Moratti, 20151 Milano MI, Italy.&zoom=17&key=AIzaSyAVSQS76JqD-cFCEbQU4NLX4X4F7GFhnFM",
+            "hostTeam": "Fiorentina",
+            "capacity": "27 000",
+            "year": "1981",
+            "url": "https://www.inter.it/en/hp"
+        },
+        {
+            "name": "Allianz",
+            "position": "mapdirection",
+            "image": "media/estadio/estadio2.jpg",
+            "direction": "Corso Gaetano Scirea, 50, 10151 Torino TO, Italy",
+            "googleUrl": "www.google.com/maps/embed/v1/place?q=Piazzale Angelo Moratti, 20151 Milano MI, Italy.&zoom=17&key=AIzaSyAVSQS76JqD-cFCEbQU4NLX4X4F7GFhnFM",
+            "hostTeam": "Lazio",
+            "capacity": "31 000",
+            "year": "1993",
+            "url": "http://www.juventus.com/en/"
+        },
+        {
+            "name": "Azurri",
+            "position": "mapdirection",
+            "image": "media/estadio/estadio3.jpg",
+            "direction": "24121-24175 Pheasant Chase Drive, Plainfield, IL 60544, EE. UU.",
+            "googleUrl": "www.google.com/maps/embed/v1/place?q=Piazzale Angelo Moratti, 20151 Milano MI, Italy.&zoom=17&key=AIzaSyAVSQS76JqD-cFCEbQU4NLX4X4F7GFhnFM",
+            "hostTeam": "Napoli",
+            "capacity": "37 000",
+            "year": "1999",
+            "url": "http://www.sscnapoli.it/static/default/Home-3.aspx?lingua=en-EN"
+        },
+        {
+            "name": "Stadio la Vecchia Donna",
+            "position": "mapdirection",
+            "image": "media/estadio/estadio4.jpg",
+            "direction": " Piazzale Vincenzo Tecchio, 80125 Napoli NA, Italy",
+            "googleUrl": "www.google.com/maps/embed/v1/place?q=Piazzale Angelo Moratti, 20151 Milano MI, Italy.&zoom=17&key=AIzaSyAVSQS76JqD-cFCEbQU4NLX4X4F7GFhnFM",
+            "hostTeam": "Sassuolo",
+            "capacity": "80 000",
+            "year": "1943",
+            "url": "http://www.fiorentina.it/pagelle-giocatori/"
+        },
+        {
+            "name": "Olimpico",
+            "position": "mapdirection",
+            "image": "media/estadio/estadio5.jpg",
+            "direction": "Viale dei Gladiatori, 00135 Roma RM, Italy",
+            "googleUrl": "www.google.com/maps/embed/v1/place?q=Piazzale Angelo Moratti, 20151 Milano MI, Italy.&zoom=17&key=AIzaSyAVSQS76JqD-cFCEbQU4NLX4X4F7GFhnFM",
+            "hostTeam": "Brescia",
+            "capacity": "120 000",
+            "year": "2012",
+            "url": "https://www.asroma.com/"
+        }
+    ]
+}
