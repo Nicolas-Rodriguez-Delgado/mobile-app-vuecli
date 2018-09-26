@@ -1,10 +1,7 @@
 <template>
     <div>
         <v-container>
-            <div v-for="(item, index) in matchesInHome" :key = "index">
-
-                <h3>{{item.teams.t1name}}</h3>
-            </div>
+            
             
             
         </v-container>

@@ -11,10 +11,10 @@
             </small>
           </footer>
         </blockquote>
-        <v-btn block large><router-link to= "/schedule"> Schedule </router-link></v-btn>
-        <v-btn block large><router-link to= "/locations"> Locations</router-link></v-btn>
-        <v-btn block large><router-link to= "/teams"> Teams</router-link></v-btn>
-        <v-btn block large><router-link to= "/chat"> Chat</router-link></v-btn>
+        <v-btn block large><router-link :to="{ name: 'schedule', params: {dataToPass: this.info}}"> Schedule </router-link></v-btn>
+        <v-btn block large><router-link :to="{ name: 'locations', params: {dataToPass: this.info}}"> Locations</router-link></v-btn>
+        <v-btn block large><router-link :to="{ name: 'teams', params: {dataToPass: this.info}}"> Teams</router-link></v-btn>
+        <v-btn block large><router-link :to="{ name: 'chat', params: {dataToPass: this.info}}"> Chat</router-link></v-btn>
       </v-layout>
     </v-slide-y-transition>
   </v-container>
@@ -57,3 +57,30 @@ a .li a {
 }
 
 </style>
+<script>
+export default {
+  data (){
+    return {
+        info:'null',
+
+    }
+  },
+  
+  created(){
+    this.getData();
+  },
+  methods: {
+    getData(){
+      fetch("https://api.myjson.com/bins/1eyfrg")
+    .then(resp => 
+      resp.json())
+    .then((data) => {
+    this.info = data.Matches;
+    console.log(this.info);
+    })
+    }
+  }
+};
+
+</script>
+
