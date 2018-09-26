@@ -12,8 +12,8 @@
           </footer>
         </blockquote>
         <v-btn block large><router-link :to="{ name: 'schedule', params: {dataToPass: this.info}}"> Schedule </router-link></v-btn>
-        <v-btn block large><router-link :to="{ name: 'locations', params: {dataToPass: this.info}}"> Locations</router-link></v-btn>
-        <v-btn block large><router-link :to="{ name: 'teams', params: {dataToPass: this.info}}"> Teams</router-link></v-btn>
+        <v-btn block large><router-link :to="{ name: 'locations', params: {dataToPass: this.fields}}"> Locations</router-link></v-btn>
+        <v-btn block large><router-link :to="{ name: 'teams', params: {dataToPass: this.teams}}"> Teams</router-link></v-btn>
         <v-btn block large><router-link :to="{ name: 'chat', params: {dataToPass: this.info}}"> Chat</router-link></v-btn>
       </v-layout>
     </v-slide-y-transition>
@@ -62,7 +62,8 @@ export default {
   data (){
     return {
         info:'null',
-
+        teams:'null',
+        fields: 'null'
     }
   },
   
@@ -71,12 +72,15 @@ export default {
   },
   methods: {
     getData(){
-      fetch("https://api.myjson.com/bins/1eyfrg")
+      fetch("https://api.myjson.com/bins/u0ot4")
     .then(resp => 
       resp.json())
     .then((data) => {
     this.info = data.Matches;
-    console.log(this.info);
+    this.teams = data.Teams;
+    this.fields = data.Fields;
+
+    console.log(this.teams);
     })
     }
   }

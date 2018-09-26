@@ -84,7 +84,7 @@
     "Teams": [
         {
             "name": "Inter",
-            "logo": "media/escudos/escudo1.png",
+            "logo": "https://i.imgur.com/MMleyZI.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -100,7 +100,7 @@
         },
         {
             "name": "Fiorentina",
-            "logo": "media/escudos/escudo2.png",
+            "logo": "https://i.imgur.com/RwMxURO.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -116,7 +116,7 @@
         },
         {
             "name": "Juventus",
-            "logo": "media/escudos/escudo3.png",
+            "logo": "https://i.imgur.com/XztrtGZ.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -132,7 +132,7 @@
         },
         {
             "name": "Napoli",
-            "logo": "media/escudos/escudo4.png",
+            "logo": "https://i.imgur.com/uifB36K.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -147,8 +147,8 @@
             }
         },
         {
-            "name": "Atalanta",
-            "logo": "media/escudos/escudo5.png",
+            "name": "Bologna",
+            "logo": "https://i.imgur.com/tf2GOGZ.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -164,7 +164,7 @@
         },
         {
             "name": "Chievo",
-            "logo": "media/escudos/escudo6.png",
+            "logo": "https://i.imgur.com/4sKW7VO.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -180,7 +180,7 @@
         },
         {
             "name": "Parma.",
-            "logo": "media/escudos/escudo7.png",
+            "logo": "https://i.imgur.com/GVFon2R.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -196,7 +196,7 @@
         },
         {
             "name": "Lazio",
-            "logo": "media/escudos/escudo8.png",
+            "logo": "https://i.imgur.com/MU8RAdo.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -212,7 +212,7 @@
         },
         {
             "name": "Brescia",
-            "logo": "media/escudos/escudo9.png",
+            "logo": "https://i.imgur.com/Os2ITfp.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",
@@ -228,7 +228,7 @@
         },
         {
             "name": "Sassuolo",
-            "logo": "media/escudos/escudo10.png",
+            "logo": "https://i.imgur.com/FzYuvFj.png",
             "field": {
                 "image": "img-url",
                 "direction": "Piazzale Angelo Moratti, 20151 Milano MI, Italy",

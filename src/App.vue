@@ -31,7 +31,8 @@
       app
     >
       <v-list>
-        <v-list-tile to="/">
+        <router-link to="/">
+        <v-list-tile>
           <v-list-tile-action>
             <v-icon>home</v-icon>
           </v-list-tile-action>
@@ -39,46 +40,47 @@
             <v-list-tile-title>HOME</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        </router-link>
+        <router-link :to="{ name: 'schedule', params: {dataToPass: this.info}}">
         <v-list-tile >
           <v-list-tile-action>
-            <router-link :to="{ name: 'schedule', params: {dataToPass: this.info}}">
               <v-icon>schedule</v-icon>
-            </router-link>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>SCHEDULE</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        </router-link>
+            <router-link :to="{ name: 'locations', params: {dataToPass: this.fields}}">
         <v-list-tile>
           <v-list-tile-action>
-            <router-link :to="{ name: 'locations', params: {dataToPass: this.info}}">
             <v-icon>location_on</v-icon>
-            </router-link>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>LOCATIONS</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+            </router-link>
+            <router-link :to="{ name: 'teams', params: {dataToPass: this.teams}}">
         <v-list-tile>
           <v-list-tile-action>
-            <router-link :to="{ name: 'teams', params: {dataToPass: this.info}}">
             <v-icon>group</v-icon>
-            </router-link>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>TEAMS</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+            </router-link>
+            <router-link :to="{ name: 'chat', params: {dataToPass: this.info}}">
         <v-list-tile>
           <v-list-tile-action>
-            <router-link :to="{ name: 'chat', params: {dataToPass: this.info}}">
             <v-icon>chat_bubble</v-icon>
-            </router-link>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>CHAT</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+            </router-link>
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
@@ -91,6 +93,9 @@ href {
   text-decoration: none;
 }
 a {
+  text-decoration: none;
+}
+router link {
   text-decoration: none;
 }
 </style>
@@ -109,6 +114,8 @@ export default {
       miniVariant: false,
       right: true,
       sideNav: false,
+      teams:'null',
+      fields: 'null'
     };
   },
   created(){
@@ -116,12 +123,13 @@ export default {
   },
   methods: {
     getData(){
-      fetch("https://api.myjson.com/bins/1eyfrg")
+      fetch("https://api.myjson.com/bins/u0ot4")
     .then(resp => 
       resp.json())
     .then((data) => {
     this.info = data.Matches;
-    console.log(this.info);
+    this.teams = data.Teams;
+    this.fields = data.Fields;
     })
     }
   }
