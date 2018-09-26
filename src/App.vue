@@ -6,11 +6,12 @@
       :clipped-left="clipped"
     >
       <router-link to= "/"><v-icon>home</v-icon></router-link>
+      
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon v-html=" 'chevron_left'"></v-icon>
       </v-btn>
-      
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-icon>account_circle</v-icon><v-toolbar-title>Login</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon @click.stop="sideNav = !sideNav">
         <v-icon>menu</v-icon>
@@ -96,7 +97,6 @@ export default {
       miniVariant: false,
       right: true,
       sideNav: false,
-      title: "NYSL Soccer League"
     };
   },
   created(){
