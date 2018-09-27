@@ -11,10 +11,11 @@
             </small>
           </footer>
         </blockquote>
-        <v-btn block large><router-link :to="{ name: 'schedule', params: {dataToPass: this.info}}"> Schedule </router-link></v-btn>
-        <v-btn block large><router-link :to="{ name: 'locations', params: {dataToPass: this.fields}}"> Locations</router-link></v-btn>
-        <v-btn block large><router-link :to="{ name: 'teams', params: {dataToPass: this.teams}}"> Teams</router-link></v-btn>
-        <v-btn block large><router-link :to="{ name: 'chat', params: {dataToPass: this.info}}"> Chat</router-link></v-btn>
+        <div>
+        <router-link :to="{ name: 'schedule', params: {dataToPass: this.info}}"><v-btn class="bton" block large> Schedule </v-btn></router-link></div>
+        <router-link :to="{ name: 'locations', params: {dataToPass: this.fields}}"><v-btn class="bton" block large> Locations</v-btn></router-link>
+        <router-link :to="{ name: 'teams', params: {dataToPass: this.teams}}"><v-btn class="bton" block large> Teams</v-btn></router-link>
+        <router-link :to="{ name: 'chat', params: {dataToPass: this.info}}"><v-btn class="bton" block large> Chat</v-btn></router-link>
       </v-layout>
     </v-slide-y-transition>
   </v-container>
@@ -47,6 +48,10 @@ a {
   }
 }
 
+.router-link-active {
+  text-decoration: none;
+}
+
 .logo {
   height: 60%;
   width: 60%;
@@ -55,6 +60,11 @@ a {
 a .li a {
   text-decoration: none;
 }
+.bton {
+  width: 320px;
+}
+
+
 
 </style>
 <script>
