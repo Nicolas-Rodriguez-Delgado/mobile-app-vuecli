@@ -56,12 +56,21 @@ a {
   height: 60%;
   width: 60%;
   margin: 20px;
+   -webkit-box-shadow:0px 250px 15px -35px rgba(0,0,0,.25);
+   -moz-box-shadow:0px 250px 15px -35px rgba(0,0,0,.25);
+   box-shadow:0px 20px 35px 8px rgba(0,0,0,.25);
+   -webkit-border-radius:50%;
+   -moz-border-radius:50%;
+   border-radius:50%;
+   
+
 }
 a .li a {
   text-decoration: none;
 }
 .bton {
   width: 320px;
+  color: #5fdd2d;
 }
 
 

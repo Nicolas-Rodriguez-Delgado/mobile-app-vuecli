@@ -6,6 +6,7 @@ import Locations from './views/Locations.vue'
 import Chat from './views/Chat.vue'
 import Teams from './views/Teams.vue'
 import Login from './views/Login.vue'
+import Signup from './views/Signup.vue'
 
 
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: Signup
     }
   ]
 })

@@ -9,12 +9,9 @@
                 <span id="reauth-email" class="reauth-email"></span>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <div id="remember" class="checkbox">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+                
+                <button v-on:click= "login" class="btn btn-lg btn-primary btn-block btn-signin" id="login" type="submit">Log in</button>
+                <p> You don't have an account? You can <router-link to="/signup">create one</router-link></p>
             </form><!-- /form -->
             <a href="#" class="forgot-password">
                 Forgot the password?
@@ -28,7 +25,8 @@
 <style>
 .card-container.card {
     max-width: 300px;
-    padding: 40px 40px;
+    padding: 20px 40px;
+    background-color: rgb(59, 59, 59);
 }
 
 .btn {
@@ -46,9 +44,9 @@
 .card {
     background-color: rgb(59, 59, 59);
     /* just in case there no content*/
-    padding: 20px 25px 30px;
+    padding: 20px 15px 30px;
     margin: 0 auto 25px;
-    margin-top: 50px;
+    margin-top: 30px;
     /* shadows and rounded borders */
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -71,3 +69,37 @@
 
 </style>
 
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDEZVHR9-k34gsfni7fN2f1JCDqwOg7D4s",
+    authDomain: "nysl-users.firebaseapp.com",
+    databaseURL: "https://nysl-users.firebaseio.com",
+    projectId: "nysl-users",
+    storageBucket: "nysl-users.appspot.com",
+    messagingSenderId: "683030492433"
+  };
+  firebase.initializeApp(config);
+</script>
+<script>
+export default {
+    methods: { 
+    
+    login: function() {
+
+            this.$router.replace("chat")    
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider);
+    console.log("login");
+
+},
+created() {
+
+    document.getElementById("login").addEventListener("click", login);
+
+}
+
+    }
+}
+</script>
