@@ -12,9 +12,7 @@
                 
                 <button v-on:click= "signup" class="btn btn-lg btn-primary btn-block btn-signin" id="login" type="submit">Sign up</button>
             </form><!-- /form -->
-            <a href="#" class="forgot-password">
-                Forgot the password?
-            </a>
+            
         </div><!-- /card-container -->
     </div><!-- /container -->
     </div>
@@ -75,8 +73,8 @@ export default {
   name: "signup",
   data: function() {
     return {
-      email: "",
-      password: ""
+      email: '',
+      password: ''
     };
   },
 

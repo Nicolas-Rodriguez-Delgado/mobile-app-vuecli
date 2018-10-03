@@ -91,7 +91,7 @@ export default {
   },
   methods: {
     getData(){
-      fetch("https://api.myjson.com/bins/u0ot4")
+      fetch("https://api.myjson.com/bins/gla14")
     .then(resp => 
       resp.json())
     .then((data) => {
