@@ -8,11 +8,11 @@
       <router-link to= "/"><v-icon>home</v-icon></router-link>
       
       <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon v-html=" 'chevron_left'"></v-icon>
+        <v-icon @click="$router.go(-1)" v-html=" 'chevron_left'"></v-icon>
       </v-btn>
       <v-spacer></v-spacer>
-      <v-icon>account_circle</v-icon>
-      <router-link to= "/login"><v-toolbar-title>  Login</v-toolbar-title>
+      <v-icon class="log">account_circle</v-icon>
+      <router-link to= "/login"><v-toolbar-title>  login</v-toolbar-title>
       </router-link>
       <v-spacer></v-spacer>
       <v-btn icon @click.stop="sideNav = !sideNav">
@@ -97,6 +97,9 @@ a {
 }
 router link {
   text-decoration: none;
+}
+.log {
+  margin:4px;
 }
 </style>
 
