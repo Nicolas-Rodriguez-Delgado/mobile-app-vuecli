@@ -84,7 +84,7 @@ export default {
         .auth()
         .createUserWithEmailAndPassword(this.email, this.password)
         .then(
-          function(user) {
+          (user) => {
             alert("Goal! Your account has been created!");
           },
           function(err) {

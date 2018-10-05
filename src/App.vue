@@ -8,7 +8,6 @@
       <router-link to= "/"><v-icon>home</v-icon></router-link>
       
       <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon @click="$router.go(-1)" v-html=" 'chevron_left'"></v-icon>
       </v-btn>
       <v-spacer></v-spacer>
       <v-icon class="log">account_circle</v-icon>

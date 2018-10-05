@@ -24,11 +24,13 @@
 </template>
 <style>
 .sched {
-  width: 40%;
+  width: 50%;
+  max-width: 100%;
   margin: 5px;
+  margin-left: 5px;
 }
 .in {
-    margin: 0px;
+    margin: 4px;
 }
 .rowes {
     margin: 20px;
